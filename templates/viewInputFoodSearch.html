@@ -1,0 +1,22 @@
+{% include 'viewHeader.html' %}
+
+        <br>
+        <br>
+        <div style="text-align: center;" class="container-fluid">
+            <div style="width: 30%; border: 1px solid black; background-color: #efefef; margin: auto;">
+                <h3 style="font-weight:bold;text-decoration:underline;"></h3>
+                <br/>
+                <form role="form" action="/foodSearch" method="POST">
+                    <div class="form-group">
+                        <label for="tag">Saisissez la nourriture à rechercher</label>
+                        <input type="text" class="form-control" name="tag" id="tag"
+                               placeholder="Saisir la nourriture à rechercher"/>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Valider</button>
+                </form>
+                <br/>
+                <br/>
+            </div>
+        </div>
+
+{% include 'viewFooter.html' %}

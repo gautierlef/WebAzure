@@ -1,0 +1,17 @@
+{% include 'viewHeader.html' %}
+
+        <br>
+        <br>
+        {% for food in foods %}
+            <a download="{{ food.blob.name }}" href="https://storimjm.blob.core.windows.net/762e7379-5fb4-4154-86a7-5add55bdb720/{{ food.blob.name }}" title="{{ food.blob.name }}">
+                <img style="max-width: 75%;" src="https://storimjm.blob.core.windows.net/762e7379-5fb4-4154-86a7-5add55bdb720/{{ food.blob.name }}" alt="{{ food.blob.name }}">
+            </a>
+            <br>
+            <br>
+        {% endfor %}
+        <form style="text-align: center;" action="/" Method="get" style="margin: auto;">
+            <td><button class="btn btn-warning">Retour</button></td>
+        </form>
+
+
+{% include 'viewFooter.html' %}

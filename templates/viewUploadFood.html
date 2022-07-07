@@ -1,0 +1,23 @@
+{% include 'base.html' %}
+
+<div class="d-flex justify-content-center top-50">
+    <div class="card w-75 position-absolute bottom-50">
+        <div class="card-body">
+            <form action="/uploadFood" method="POST" enctype="multipart/form-data" id="dropzoneThread">
+                <div class="dropzone dz-clickable rounded-3" id="dropzoneArea">
+                    <div class="dz-default dz-message">
+                        <span class="h1"><i class="bi bi-cloud-upload" id="uploadIconDropzone"></i></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight mt-2">
+                    <button type="submit" class="btn btn-primary ff-btn-primary p-2 " id="submit" disabled>Add</button>
+                </div>
+            </form>
+        </div>
+        <form style="text-align: center;" action="/" Method="get" style="margin: auto;">
+            <td><button class="btn btn-warning">Retour</button></td>
+        </form>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/upload.js') }}" defer></script>

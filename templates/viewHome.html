@@ -1,0 +1,16 @@
+{% include 'viewHeader.html' %}
+
+        <br>
+        <br>
+		<div style="text-align: center; color: white">
+            <h1 style="text-align: center;">Bienvenue!</h1>
+            <br>
+            <a href="/inputFoodSearch" class="btn btn-lg btn-warning">Recherche nourriture</a>
+            <a href="/viewFood" class="btn btn-lg btn-warning">Lister nourriture</a>
+            <a href="/viewUploadFood" class="btn btn-lg btn-warning">Upload nourriture</a>
+		</div>
+        <div class="hover_img" style="text-align: right;">
+            <a>.<span><img style="margin-left: auto" src="{{ url_for( 'static' , filename = 'media/shrek.gif' ) }}" alt="image" width="800" height="450"/></span></a>
+        </div>
+
+{% include 'viewFooter.html' %}
