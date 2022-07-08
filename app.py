@@ -1,5 +1,4 @@
 import os
-
 from flask import Flask, render_template, request, redirect
 from azure.storage.blob import BlobServiceClient
 from azure.storage.blob import ContainerClient
